@@ -15,6 +15,7 @@ todoList.appendChild(todoItem);
 const deleteBtn = document.createElement("span");
 deleteBtn.innerHTML ="\u00d7";
 todoItem.appendChild(deleteBtn);
+saveTask();
 }
 }
 // implement check and delete logic
@@ -27,3 +28,7 @@ todoList.addEventListener("click",function(e){
         e.target.parentElement.remove();
     }
 })
+// create local storage
+function saveTask(){
+    localStorage.setItem("data",todoList.innerHTML);
+}
