@@ -32,3 +32,8 @@ todoList.addEventListener("click",function(e){
 function saveTask(){
     localStorage.setItem("data",todoList.innerHTML);
 }
+// retrive from local storage
+function showTask(){
+    todoList.innerHTML = localStorage.getItem("data");
+}
+showTask();
