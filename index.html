@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>todo list</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div>
+<div class="container">
     <h1>CRB Todo List</h1>
-    <input type="text" placeholder="Add item">
-    <button>Add</button>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
+    <div class="input_div">
+        <input type="text" placeholder="Add item" id="todoInput">
+        <button onclick="addTask()">Add</button>
+
+    </div>
+    
+    <ul id="todoList">
+
     </ul>
 </div>
+<script src="./script.js"></script>
 </body>
 </html>
